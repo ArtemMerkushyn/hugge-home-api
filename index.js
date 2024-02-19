@@ -2,6 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 
+import routesProducts from './routes/products.js';
+
 const app = express();
 
 const PORT = 8080;
@@ -10,6 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 //routes http://localhost:8080/
+app.use('/api', routesProducts);
 
 
 
