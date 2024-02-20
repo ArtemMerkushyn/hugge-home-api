@@ -33,9 +33,12 @@ const ProductSchema = new mongoose.Schema(
         },
         reviews: {
             type: String,
+            default: [],
         },
         questions: {
             type: String,
+            default: [],
+
         }
     },
     { timestamps: true },
