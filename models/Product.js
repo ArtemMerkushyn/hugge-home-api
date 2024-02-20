@@ -32,11 +32,11 @@ const ProductSchema = new mongoose.Schema(
             type: String,
         },
         reviews: {
-            type: String,
+            type: Array,
             default: [],
         },
         questions: {
-            type: String,
+            type: Array,
             default: [],
 
         }
